@@ -1,0 +1,26 @@
+# Solviz
+
+> Empresa brasileira de tecnologia em Goiânia, Goiás, especializada na criação de sites profissionais, aplicativos mobile, sistemas sob medida e soluções de inteligência artificial.
+
+A Solviz transforma ideias em produtos digitais, acompanhando planejamento, design, desenvolvimento e lançamento. O atendimento comercial é realizado em português pelo WhatsApp. O site informa mais de 40 projetos lançados e apresenta serviços para empresas e empreendedores.
+
+Informações oficiais:
+
+- Website canônico: https://www.solviz.com.br/
+- Localização: Goiânia, Goiás, Brasil
+- Telefone e WhatsApp: +55 62 98140-1343
+- Idioma principal: português do Brasil
+
+## Conteúdo principal
+
+- [Página inicial](https://www.solviz.com.br/): Visão geral da Solviz, seus serviços, diferenciais, projetos e formulário de contato.
+- [Serviços](https://www.solviz.com.br/#servicos): Desenvolvimento de aplicativos mobile, sites, plataformas web e sistemas sob medida.
+- [Inteligência Artificial e Otimização](https://www.solviz.com.br/#ia-otimizacao): Soluções de machine learning, modelos preditivos, otimização, processamento de linguagem, visão computacional, análise de dados e business intelligence.
+- [Processo de desenvolvimento](https://www.solviz.com.br/#processo): Etapas de descoberta, design, desenvolvimento e lançamento.
+- [Projetos](https://www.solviz.com.br/#projetos): Exemplos de aplicativos, comércio eletrônico e sistemas de logística.
+- [Contato](https://www.solviz.com.br/#contato): Formulário que encaminha nome, e-mail, telefone, empresa, tipo de projeto e mensagem para o WhatsApp da Solviz.
+
+## Recursos técnicos
+
+- [Sitemap XML](https://www.solviz.com.br/sitemap.xml): Lista canônica de páginas públicas do site.
+- [Política de rastreamento](https://www.solviz.com.br/robots.txt): Permissões de acesso para rastreadores.
