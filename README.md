@@ -7,7 +7,7 @@ Site institucional da Solviz, estúdio de desenvolvimento de aplicativos, sites 
 - Design responsivo e acessível
 - Navegação para desktop e celular
 - Tradução para 36 idiomas
-- Formulário de contato integrado ao Gmail
+- Formulário de contato integrado ao WhatsApp
 - Validação dos campos antes do redirecionamento
 - Metadados de SEO, Open Graph e dados estruturados
 - Publicação estática pela Vercel
@@ -16,7 +16,7 @@ Site institucional da Solviz, estúdio de desenvolvimento de aplicativos, sites 
 
 - HTML5, CSS3 e JavaScript sem dependências
 - Google Translate
-- E-mail para contato
+- WhatsApp para contato
 - Vercel
 
 ## Executar localmente
@@ -29,11 +29,11 @@ Depois acesse <http://localhost:8000>. Abrir **index.html** diretamente também 
 
 ## Fluxo de contato
 
-O visitante preenche nome, e-mail, empresa, tipo de projeto e mensagem. Ao selecionar **Continuar por e-mail**, o site valida os dados e abre uma nova mensagem no Gmail endereçada para a Solviz.
+O visitante preenche nome, telefone, empresa, tipo de projeto e mensagem. Ao selecionar **Continuar no WhatsApp**, o site valida os dados e abre uma conversa com a Solviz contendo as informações preenchidas.
 
-E-mail configurado:
+Número configurado:
 
-    suportesolviz@gmail.com
+    +55 62 98140-1343
 
 ## Idiomas disponíveis
 
@@ -47,6 +47,6 @@ A publicação usa o modo estático da Vercel, com preset **Other** e sem comand
 
 ## Contato
 
-- E-mail: suportesolviz@gmail.com
+- WhatsApp: (62) 98140-1343
 
 © 2026 Solviz. Todos os direitos reservados.
