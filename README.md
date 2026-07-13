@@ -29,7 +29,7 @@ Depois acesse <http://localhost:8000>. Abrir **index.html** diretamente também 
 
 ## Fluxo de contato
 
-O visitante preenche nome, telefone, empresa, tipo de projeto e mensagem. Ao selecionar **Continuar no WhatsApp**, o site valida os dados e abre uma conversa com a Solviz contendo as informações preenchidas.
+O visitante preenche nome, e-mail, telefone, empresa, tipo de projeto e mensagem. Ao selecionar **Continuar no WhatsApp**, o site valida os dados e abre uma conversa com a Solviz contendo as informações preenchidas.
 
 Número configurado:
 
