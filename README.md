@@ -10,7 +10,7 @@ Site institucional da Solviz, estúdio de desenvolvimento de aplicativos, sites 
 - Formulário de contato integrado ao WhatsApp
 - Validação dos campos antes do redirecionamento
 - Metadados de SEO, Open Graph e dados estruturados
-- Publicação estática pelo GitHub Pages
+- Publicação estática pela Vercel
 
 ## Tecnologias
 
@@ -41,9 +41,9 @@ Português, espanhol, inglês, francês, alemão, italiano, holandês, polonês,
 
 ## Publicação
 
-O projeto está preparado para o endereço <https://diegofariafuel.github.io/site/>. No GitHub, abra **Settings > Pages**, escolha **Deploy from a branch** e publique a raiz da branch **main**.
+O site está configurado para a Vercel no endereço <https://www.solviz.com.br/>. O domínio raiz <https://solviz.com.br/> deve redirecionar para a versão com **www**.
 
-Se o site usar outro domínio, atualize no **index.html** as URLs absolutas de canonical, Open Graph, Twitter Card e JSON-LD.
+O arquivo **vercel.json** força a pasta raiz como diretório de saída do site estático, sem etapa de build.
 
 ## Contato
 
