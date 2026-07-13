@@ -7,8 +7,8 @@
 
 <!-- SEO Meta Tags -->
 <title>Solviz — Desenvolvimento de Apps e Sites | Apps Mobile e Plataformas Web</title>
-<meta name="description" content="A Solviz desenvolve aplicativos mobile (iOS/Android) e sites profissionais. Do design ao código, com clareza em cada etapa. Contato: (62) 98140-1343">
-<meta name="keywords" content="desenvolvimento de apps, criação de sites, apps mobile, desenvolvimento iOS, desenvolvimento Android, sites responsivos, plataformas web, sistemas sob medida, Solviz">
+<meta name="description" content="A Solviz desenvolve aplicativos mobile (iOS/Android), sites profissionais e soluções de IA e Otimização. Machine Learning, análise de dados e otimização de processos. Contato: (62) 98140-1343">
+<meta name="keywords" content="desenvolvimento de apps, criação de sites, apps mobile, inteligência artificial, machine learning, otimização de processos, análise de dados, chatbots, visão computacional, data science, business intelligence, modelos preditivos, Solviz">
 <meta name="author" content="Solviz">
 <meta name="robots" content="index, follow">
 <meta name="language" content="Portuguese">
@@ -464,6 +464,111 @@
   .service-card h3{ font-size: 19px; margin-bottom: 10px; }
   .service-card p{ color: var(--muted); font-size: 15px; }
 
+  /* ---------- AI SECTION ---------- */
+  .ai-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .ai-card{
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(18,26,46,0.5) 100%);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 38px 32px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color .25s ease, transform .25s ease;
+  }
+  .ai-card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255,182,72,0.08), transparent 70%);
+    border-radius: 50%;
+  }
+  .ai-card:hover{
+    border-color: var(--gold);
+    transform: translateY(-4px);
+  }
+  .ai-badge{
+    display: inline-block;
+    background: var(--sun-grad);
+    color: #14100a;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+  }
+  .ai-card h3{
+    font-size: 22px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .ai-card p{
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  .ai-features{
+    list-style: none;
+    margin-top: 20px;
+  }
+  .ai-features li{
+    color: var(--muted);
+    font-size: 14px;
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+  }
+  .ai-features li::before{
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+  }
+  .ai-highlight{
+    background: var(--bg-alt);
+    border-left: 3px solid var(--gold);
+    padding: 24px 28px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  .ai-highlight h3{
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--gold);
+  }
+  .ai-highlight p{
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .ai-tech-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .ai-tech-tag{
+    background: rgba(255,182,72,0.1);
+    border: 1px solid rgba(255,182,72,0.2);
+    color: var(--gold);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+  }
+
   /* ---------- PROCESS ---------- */
   .process-list{
     display:flex;
@@ -773,7 +878,7 @@
   @media (max-width: 900px){
     .hero-grid{ grid-template-columns: 1fr; }
     .horizon-box{ order: -1; max-width: 320px; }
-    .services-grid, .work-grid{ grid-template-columns: 1fr; }
+    .services-grid, .work-grid, .ai-grid{ grid-template-columns: 1fr; }
     .why-grid{ grid-template-columns: 1fr; }
     .nav-links{ display:none; }
     .lang-selector{ display: none; }
@@ -802,6 +907,7 @@
       <div class="logo"><span class="logo-dot"></span>solviz</div>
       <div class="nav-links">
         <a href="#servicos">Serviços</a>
+        <a href="#ia-otimizacao">IA & Otimização</a>
         <a href="#processo">Processo</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
@@ -838,9 +944,9 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Estúdio de apps &amp; sites</div>
+        <div class="eyebrow">Estúdio de apps, sites &amp; IA</div>
         <h1>Sua ideia,<br><em>revelada</em> em código.</h1>
-        <p class="lead">A Solviz projeta e desenvolve aplicativos e sites que tiram sua ideia do papel — com clareza do primeiro traço ao lançamento.</p>
+        <p class="lead">A Solviz projeta e desenvolve aplicativos, sites e soluções de IA que tiram sua ideia do papel — com clareza do primeiro traço ao lançamento.</p>
         <div class="hero-ctas">
           <div class="cta-dropdown">
             <button type="button" class="btn btn-primary cta-trigger" aria-haspopup="true" aria-expanded="false">Iniciar projeto</button>
@@ -959,8 +1065,101 @@
     </div>
   </section>
 
+  <!-- AI & OPTIMIZATION -->
+  <section id="ia-otimizacao" style="background: var(--bg-alt);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Inteligência Artificial & Otimização</div>
+        <h2>Transforme dados em decisões inteligentes.</h2>
+        <p>Implementamos modelos de IA customizados e soluções de otimização que resolvem problemas complexos do seu negócio.</p>
+      </div>
+
+      <div class="ai-grid">
+        <div class="ai-card reveal">
+          <span class="ai-badge">Machine Learning</span>
+          <h3>Modelos Preditivos & Classificação</h3>
+          <p>Desenvolvemos modelos de machine learning que aprendem com seus dados para prever comportamentos, classificar informações e automatizar decisões.</p>
+          <ul class="ai-features">
+            <li>Previsão de demanda e vendas</li>
+            <li>Detecção de fraudes e anomalias</li>
+            <li>Classificação automática de documentos</li>
+            <li>Análise de sentimento em textos</li>
+            <li>Recomendação personalizada de produtos</li>
+          </ul>
+          <div class="ai-tech-tags">
+            <span class="ai-tech-tag">TensorFlow</span>
+            <span class="ai-tech-tag">PyTorch</span>
+            <span class="ai-tech-tag">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="ai-card reveal">
+          <span class="ai-badge">Otimização</span>
+          <h3>Resolução de Problemas Complexos</h3>
+          <p>Implementamos algoritmos avançados de otimização para maximizar eficiência, reduzir custos e resolver problemas de alocação de recursos.</p>
+          <ul class="ai-features">
+            <li>Otimização de rotas e logística</li>
+            <li>Planejamento de produção e estoque</li>
+            <li>Alocação ótima de recursos</li>
+            <li>Escalonamento de tarefas e equipes</li>
+            <li>Minimização de custos operacionais</li>
+          </ul>
+          <div class="ai-tech-tags">
+            <span class="ai-tech-tag">OR-Tools</span>
+            <span class="ai-tech-tag">CPLEX</span>
+            <span class="ai-tech-tag">Gurobi</span>
+          </div>
+        </div>
+
+        <div class="ai-card reveal">
+          <span class="ai-badge">NLP & Vision</span>
+          <h3>Processamento de Linguagem e Imagem</h3>
+          <p>Extraímos informações valiosas de textos e imagens usando técnicas avançadas de processamento de linguagem natural e visão computacional.</p>
+          <ul class="ai-features">
+            <li>Análise automática de documentos</li>
+            <li>Chatbots inteligentes e assistentes virtuais</li>
+            <li>Reconhecimento e classificação de imagens</li>
+            <li>Extração de dados de documentos (OCR)</li>
+            <li>Tradução automática e sumarização</li>
+          </ul>
+          <div class="ai-tech-tags">
+            <span class="ai-tech-tag">OpenAI</span>
+            <span class="ai-tech-tag">Anthropic</span>
+            <span class="ai-tech-tag">Gemini</span>
+          </div>
+        </div>
+
+        <div class="ai-card reveal">
+          <span class="ai-badge">Data Science</span>
+          <h3>Análise de Dados & Business Intelligence</h3>
+          <p>Transformamos dados brutos em insights acionáveis através de análises estatísticas, dashboards interativos e relatórios automatizados.</p>
+          <ul class="ai-features">
+            <li>Dashboards interativos em tempo real</li>
+            <li>Análise exploratória e estatística</li>
+            <li>Modelagem de séries temporais</li>
+            <li>Segmentação de clientes (clustering)</li>
+            <li>Relatórios automatizados e KPIs</li>
+          </ul>
+          <div class="ai-tech-tags">
+            <span class="ai-tech-tag">Python</span>
+            <span class="ai-tech-tag">R</span>
+            <span class="ai-tech-tag">Power BI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-highlight reveal">
+        <h3>💡 Casos de Uso Reais</h3>
+        <p><strong>Logística:</strong> Redução de 30% nos custos de transporte através de otimização de rotas com restrições de tempo, capacidade e múltiplos depósitos.</p>
+        <p style="margin-top:12px;"><strong>E-commerce:</strong> Aumento de 45% nas conversões com sistema de recomendação personalizado baseado em histórico de navegação e compras.</p>
+        <p style="margin-top:12px;"><strong>Manufatura:</strong> Economia de 20% em estoque através de previsão de demanda com machine learning considerando sazonalidade e tendências de mercado.</p>
+        <p style="margin-top:12px;"><strong>Atendimento:</strong> Redução de 60% no tempo de resposta com chatbot inteligente que resolve 80% das dúvidas automaticamente.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- PROCESS -->
-  <section id="processo" style="background: var(--bg-alt);">
+  <section id="processo">
     <div class="wrap">
       <div class="section-head reveal">
         <div class="eyebrow">Como funciona</div>
@@ -1144,12 +1343,13 @@
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo"><span class="logo-dot"></span>solviz</div>
-        <p>Estúdio de desenvolvimento de apps e sites. Da ideia ao código, com clareza em cada etapa.</p>
+        <p>Estúdio de desenvolvimento de apps, sites e soluções de IA. Do design ao código, com clareza em cada etapa.</p>
       </div>
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Navegação</h4>
           <a href="#servicos">Serviços</a>
+          <a href="#ia-otimizacao">IA & Otimização</a>
           <a href="#processo">Processo</a>
           <a href="#projetos">Projetos</a>
         </div>
