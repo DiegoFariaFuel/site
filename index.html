@@ -1,69 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR" translate="no">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="TFksY4Mcta45XeUzSQXP4oXXSpnnyHCc0GG0qrtY3EA">
 
-<!-- SEO Meta Tags -->
-<title>Solviz — Desenvolvimento de Apps e Sites | Apps Mobile e Plataformas Web</title>
-<meta name="description" content="A Solviz desenvolve aplicativos mobile (iOS/Android), sites profissionais e soluções de IA e Otimização. Machine Learning, análise de dados e otimização de processos. Contato: (62) 98140-1343">
+<title>Solviz | Desenvolvimento de Apps, Sites e Soluções de IA</title>
+<meta name="description" content="A Solviz desenvolve aplicativos, sites profissionais e soluções de IA sob medida. Do design ao lançamento, com clareza em cada etapa.">
 <meta name="keywords" content="desenvolvimento de apps, criação de sites, apps mobile, inteligência artificial, machine learning, otimização de processos, análise de dados, chatbots, visão computacional, data science, business intelligence, modelos preditivos, Solviz">
 <meta name="author" content="Solviz">
 <meta name="robots" content="index, follow">
 <meta name="language" content="Portuguese">
-
-<!-- Open Graph / Facebook -->
+<meta name="theme-color" content="#0b0f1a">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://solviz.com/">
+<meta property="og:url" content="https://diegofariafuel.github.io/site/">
 <meta property="og:title" content="Solviz — Apps e sites com clareza">
 <meta property="og:description" content="Desenvolvemos aplicativos e sites que tiram sua ideia do papel. 40+ projetos lançados. Contato: (62) 98140-1343">
-<meta property="og:image" content="https://solviz.com/og-image.jpg">
+<meta property="og:image" content="https://diegofariafuel.github.io/site/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1729">
+<meta property="og:image:height" content="910">
+<meta property="og:image:alt" content="Solviz — Apps, sites e IA com clareza">
+<meta property="og:site_name" content="Solviz">
 <meta property="og:locale" content="pt_BR">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://solviz.com/">
+<meta name="twitter:url" content="https://diegofariafuel.github.io/site/">
 <meta name="twitter:title" content="Solviz — Apps e sites com clareza">
 <meta name="twitter:description" content="Desenvolvemos aplicativos e sites que tiram sua ideia do papel. 40+ projetos lançados.">
-<meta name="twitter:image" content="https://solviz.com/og-image.jpg">
-
-<!-- Geo Tags -->
+<meta name="twitter:image" content="https://diegofariafuel.github.io/site/og-image.png">
+<meta name="twitter:image:alt" content="Solviz — Apps, sites e IA com clareza">
 <meta name="geo.region" content="BR-GO">
 <meta name="geo.placename" content="Goiânia">
 <meta name="geo.position" content="-16.6869;-49.2648">
 <meta name="ICBM" content="-16.6869, -49.2648">
 
-<!-- Mobile Web App -->
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Solviz">
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://solviz.com/">
-
-<!-- Structured Data - JSON-LD -->
+<link rel="canonical" href="https://diegofariafuel.github.io/site/">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Solviz",
   "description": "Estúdio de desenvolvimento de apps e sites",
-  "url": "https://solviz.com",
-  "logo": "https://solviz.com/logo.png",
+  "url": "https://diegofariafuel.github.io/site/",
+  "image": "https://diegofariafuel.github.io/site/og-image.png",
   "telephone": "+55-62-98140-1343",
-  "email": "suportesolviz@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "BR",
     "addressRegion": "GO",
     "addressLocality": "Goiânia"
   },
-  "sameAs": [
-    "https://instagram.com/solviz",
-    "https://linkedin.com/company/solviz"
-  ],
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+55-62-98140-1343",
@@ -78,15 +65,15 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Solviz",
-  "image": "https://solviz.com/logo.png",
+  "url": "https://diegofariafuel.github.io/site/",
+  "image": "https://diegofariafuel.github.io/site/og-image.png",
   "description": "Desenvolvimento de aplicativos mobile e sites profissionais",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "BR"
   },
   "priceRange": "$$",
-  "telephone": "+55-62-98140-1343",
-  "email": "suportesolviz@gmail.com"
+  "telephone": "+55-62-98140-1343"
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -109,6 +96,7 @@
 
   *{ box-sizing: border-box; margin:0; padding:0; }
   html{ scroll-behavior: smooth; }
+  section[id]{ scroll-margin-top: 88px; }
 
   body{
     background: var(--bg);
@@ -118,6 +106,11 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
+
+  #google_translate_element,
+  .goog-te-banner-frame,
+  .goog-te-balloon-frame{ display: none !important; }
+  body{ top: 0 !important; }
 
   h1,h2,h3, .display{
     font-family: 'Space Grotesk', sans-serif;
@@ -146,6 +139,33 @@
 
   a{ color: inherit; text-decoration: none; }
   img{ max-width: 100%; display:block; }
+  [hidden]{ display: none !important; }
+
+  .sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .skip-link{
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 1000;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--gold);
+    color: #14100a;
+    font-weight: 700;
+    transform: translateY(-150%);
+    transition: transform .2s ease;
+  }
+  .skip-link:focus{ transform: translateY(0); }
 
   .wrap{
     max-width: 1180px;
@@ -158,7 +178,6 @@
     outline-offset: 3px;
   }
 
-  /* ---------- NAV ---------- */
   header{
     position: fixed;
     top:0; left:0; right:0;
@@ -169,6 +188,12 @@
   }
   header.scrolled{
     background: rgba(11,15,26,0.86);
+    backdrop-filter: blur(10px);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  header.menu-open{
+    background: rgba(11,15,26,0.96);
     backdrop-filter: blur(10px);
     padding: 14px 0;
     border-bottom: 1px solid var(--line);
@@ -230,9 +255,31 @@
   .btn-ghost:hover{ border-color: var(--gold); }
 
   .nav-cta{ display:flex; gap: 12px; align-items: center; }
-  .menu-btn{ display:none; }
+  .menu-btn{
+    display:none;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+  }
+  .menu-btn span{
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .menu-btn[aria-expanded="true"] span:nth-child(1){ transform: translateY(6px) rotate(45deg); }
+  .menu-btn[aria-expanded="true"] span:nth-child(2){ opacity: 0; }
+  .menu-btn[aria-expanded="true"] span:nth-child(3){ transform: translateY(-6px) rotate(-45deg); }
 
-  /* ---------- LANGUAGE SELECTOR ---------- */
   .lang-selector{
     position: relative;
     display: inline-block;
@@ -255,7 +302,7 @@
   .lang-menu{
     position: absolute;
     top: calc(100% + 8px);
-    right: 0;
+    inset-inline-end: 0;
     min-width: 200px;
     max-height: 400px;
     overflow-y: auto;
@@ -281,7 +328,7 @@
     border: none;
     color: var(--text);
     padding: 10px 12px;
-    text-align: left;
+    text-align: start;
     cursor: pointer;
     border-radius: 6px;
     font-size: 14px;
@@ -303,14 +350,30 @@
     width: 24px;
     text-align: center;
   }
+  .language-status{
+    position: absolute;
+    top: calc(100% + 8px);
+    inset-inline-end: 0;
+    z-index: 202;
+    width: max-content;
+    max-width: min(300px, 80vw);
+    padding: 9px 12px;
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    background: var(--bg-card);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .language-status:empty{ display: none; }
 
-  /* ---------- CTA DROPDOWN ---------- */
   .cta-dropdown{ position: relative; display: inline-block; }
   .cta-trigger{ font: inherit; }
   .cta-menu{
     position: absolute;
     top: calc(100% + 10px);
-    left: 0;
+    inset-inline-start: 0;
     min-width: 220px;
     background: var(--bg-card);
     border: 1px solid var(--line-strong);
@@ -323,7 +386,7 @@
     box-shadow: 0 24px 48px rgba(0,0,0,0.4);
     z-index: 200;
   }
-  .cta-dropdown--right .cta-menu{ left: auto; right: 0; }
+  .cta-dropdown--right .cta-menu{ inset-inline-start: auto; inset-inline-end: 0; }
   .cta-dropdown.open .cta-menu{ opacity: 1; visibility: visible; transform: translateY(0); }
   .cta-menu a{
     display:flex;
@@ -339,7 +402,6 @@
   .cta-menu a:hover, .cta-menu a:focus-visible{ background: rgba(245,242,234,0.06); color: var(--gold); }
   .cta-menu svg{ flex-shrink: 0; opacity: .8; }
 
-  /* ---------- HERO ---------- */
   .hero{
     position: relative;
     padding: 190px 0 120px;
@@ -385,7 +447,6 @@
     font-weight: 600;
   }
 
-  /* sunrise visual */
   .horizon-box{
     position: relative;
     aspect-ratio: 1/1;
@@ -408,14 +469,19 @@
     50%{ opacity: .55; }
   }
   @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
     .sun-core, .grid-dot{ animation: none !important; }
+    .reveal-ready .reveal{
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
   }
-  
-  /* Fix grid dots appearing behind sun */
+
   .grid-dot{ z-index: 0; }
 
-  /* ---------- SECTION SHARED ---------- */
   section{ padding: 120px 0; position: relative; }
+  .section-alt{ background: var(--bg-alt); }
   .section-head{
     max-width: 620px;
     margin-bottom: 64px;
@@ -429,14 +495,14 @@
     margin-top: 16px;
   }
 
-  .reveal{
+  .reveal{ opacity: 1; transform: none; }
+  .reveal-ready .reveal{
     opacity: 0;
     transform: translateY(24px);
     transition: opacity .7s ease, transform .7s ease;
   }
-  .reveal.in{ opacity:1; transform: translateY(0); }
+  .reveal-ready .reveal.in{ opacity:1; transform: translateY(0); }
 
-  /* ---------- SERVICES ---------- */
   .services-grid{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -464,7 +530,6 @@
   .service-card h3{ font-size: 19px; margin-bottom: 10px; }
   .service-card p{ color: var(--muted); font-size: 15px; }
 
-  /* ---------- AI SECTION ---------- */
   .ai-grid{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -525,23 +590,24 @@
     color: var(--muted);
     font-size: 14px;
     padding: 8px 0;
-    padding-left: 24px;
+    padding-inline-start: 24px;
     position: relative;
   }
   .ai-features li::before{
     content: '→';
     position: absolute;
-    left: 0;
+    inset-inline-start: 0;
     color: var(--gold);
     font-weight: bold;
   }
   .ai-highlight{
     background: var(--bg-alt);
-    border-left: 3px solid var(--gold);
+    border-inline-start: 3px solid var(--gold);
     padding: 24px 28px;
     border-radius: 10px;
     margin-top: 40px;
   }
+  .ai-highlight p + p{ margin-top: 12px; }
   .ai-highlight h3{
     font-size: 18px;
     margin-bottom: 12px;
@@ -569,7 +635,6 @@
     font-weight: 500;
   }
 
-  /* ---------- PROCESS ---------- */
   .process-list{
     display:flex;
     flex-direction: column;
@@ -592,7 +657,6 @@
   .process-item h3{ font-size: 19px; margin-bottom: 8px; }
   .process-item p{ color: var(--muted); font-size: 15.5px; max-width: 560px; }
 
-  /* ---------- WORK ---------- */
   .work-grid{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -642,7 +706,6 @@
   .work-body h3{ font-size: 18px; margin-bottom: 8px; }
   .work-body p{ color: var(--muted); font-size: 14.5px; }
 
-  /* ---------- WHY ---------- */
   .why-grid{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -672,7 +735,6 @@
   }
   .why-item p{ color: var(--muted); font-size: 15px; }
 
-  /* ---------- CTA BANNER ---------- */
   .cta-banner{
     background: var(--bg-alt);
     border: 1px solid var(--line);
@@ -718,11 +780,10 @@
     position: relative;
   }
 
-  /* ---------- CONTACT FORM ---------- */
   .contact-form{
     max-width: 600px;
     margin: 0 auto 32px;
-    text-align: left;
+    text-align: start;
     position: relative;
   }
   .form-row{
@@ -754,7 +815,6 @@
     color: var(--text);
     font-family: 'Inter', sans-serif;
     transition: border-color .2s ease, background .2s ease;
-    outline: none;
   }
   .form-group input:focus,
   .form-group select:focus,
@@ -769,9 +829,28 @@
   .form-group select{
     cursor: pointer;
   }
+  .form-honeypot{
+    position: absolute;
+    inset-inline-start: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .form-privacy{
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.6;
+    text-align: center;
+  }
   .form-actions{
     text-align: center;
     margin-top: 24px;
+  }
+  .btn:disabled{
+    cursor: wait;
+    opacity: .72;
+    transform: none;
   }
   .form-message{
     margin-top: 20px;
@@ -791,6 +870,12 @@
     background: rgba(245, 101, 101, 0.15);
     border: 1px solid rgba(245, 101, 101, 0.3);
     color: #fc8181;
+    display: block;
+  }
+  .form-message.info{
+    background: rgba(255, 182, 72, 0.12);
+    border: 1px solid rgba(255, 182, 72, 0.3);
+    color: var(--gold);
     display: block;
   }
   .cta-divider{
@@ -815,14 +900,13 @@
     color: var(--muted);
     font-family: 'JetBrains Mono', monospace;
   }
-  
+
   @media (max-width: 640px){
     .form-row{
       grid-template-columns: 1fr;
     }
   }
 
-  /* ---------- FOOTER ---------- */
   footer{
     padding: 64px 0 40px;
     border-top: 1px solid var(--line);
@@ -846,7 +930,7 @@
     gap: 70px;
     flex-wrap: wrap;
   }
-  .footer-col h4{
+  .footer-col h3{
     font-family:'JetBrains Mono', monospace;
     font-size: 11.5px;
     text-transform: uppercase;
@@ -874,18 +958,26 @@
     font-family: 'JetBrains Mono', monospace;
   }
 
-  /* ---------- RESPONSIVE ---------- */
   @media (max-width: 900px){
+    nav{ flex-wrap: wrap; }
     .hero-grid{ grid-template-columns: 1fr; }
     .horizon-box{ order: -1; max-width: 320px; }
     .services-grid, .work-grid, .ai-grid{ grid-template-columns: 1fr; }
     .why-grid{ grid-template-columns: 1fr; }
-    .nav-links{ display:none; }
-    .lang-selector{ display: none; }
-    .nav-cta{ margin-left: auto; }
+    .nav-links{
+      display: none;
+      order: 3;
+      width: 100%;
+      flex-direction: column;
+      gap: 0;
+      padding-top: 14px;
+    }
+    .nav-links a{ padding: 10px 0; }
+    .site-nav.menu-open .nav-links{ display: flex; }
+    .menu-btn{ display: inline-flex; }
+    .nav-cta{ margin-inline-start: auto; }
     .cta-banner{ padding: 50px 26px; }
     .process-item{ grid-template-columns: 50px 1fr; }
-    .cta-dropdown--right .cta-menu{ right: 0; left: auto; }
   }
   @media (max-width: 560px){
     .wrap{ padding: 0 20px; }
@@ -893,55 +985,58 @@
     section{ padding: 80px 0; }
     .hero-meta{ gap: 22px; }
     .footer-cols{ gap: 40px; }
+    .nav-cta{ gap: 8px; }
+    .nav-cta > .cta-dropdown{ display: none; }
+    .lang-btn{ padding: 8px 10px; }
+    .lang-code{ display: none; }
   }
 </style>
 </head>
 <body>
 
-<!-- Google Translate Element (hidden) -->
-<div id="google_translate_element" style="display:none;"></div>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div id="google_translate_element" aria-hidden="true"></div>
 
 <header id="siteHeader">
   <div class="wrap">
-    <nav>
-      <div class="logo"><span class="logo-dot"></span>solviz</div>
-      <div class="nav-links">
+    <nav class="site-nav" id="mainNav" aria-label="Navegação principal">
+      <a class="logo" href="#top" aria-label="Solviz — início"><span class="logo-dot"></span><span translate="no">solviz</span></a>
+      <div class="nav-links" id="navLinks">
         <a href="#servicos">Serviços</a>
-        <a href="#ia-otimizacao">IA & Otimização</a>
+        <a href="#ia-otimizacao">IA &amp; Otimização</a>
         <a href="#processo">Processo</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
       </div>
       <div class="nav-cta">
         <div class="lang-selector">
-          <button class="lang-btn" id="langBtn" aria-label="Selecionar idioma">
+          <button type="button" class="lang-btn" id="langBtn" aria-label="Selecionar idioma" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu">
             <span class="lang-flag" id="currentFlag">🇧🇷</span>
-            <span id="currentLang">PT</span>
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L2 4h8L6 8z"/></svg>
+            <span class="lang-code" id="currentLang">PT</span>
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L2 4h8L6 8z"/></svg>
           </button>
-          <div class="lang-menu" id="langMenu"></div>
+          <div class="lang-menu" id="langMenu" role="group" aria-label="Idiomas"></div>
+          <span class="language-status" id="languageStatus" role="status" aria-live="polite"></span>
         </div>
         <div class="cta-dropdown cta-dropdown--right">
-          <button type="button" class="btn btn-primary cta-trigger" aria-haspopup="true" aria-expanded="false">Iniciar projeto</button>
-          <div class="cta-menu" role="menu">
-            <a href="https://wa.me/5562981401343?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20um%20projeto" target="_blank" rel="noopener" role="menuitem">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.1 1.5-.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+          <button type="button" class="btn btn-primary cta-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="headerContactMenu">Iniciar projeto</button>
+          <div class="cta-menu" id="headerContactMenu">
+            <a href="https://wa.me/5562981401343?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20um%20projeto" target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.1 1.5-.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
               WhatsApp
-            </a>
-            <a href="mailto:suportesolviz@gmail.com" role="menuitem">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg>
-              E-mail
             </a>
           </div>
         </div>
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
   </div>
 </header>
 
-<main>
-  <!-- HERO -->
-  <section class="hero">
+<main id="conteudo" tabindex="-1">
+  <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
         <div class="eyebrow">Estúdio de apps, sites &amp; IA</div>
@@ -949,15 +1044,11 @@
         <p class="lead">A Solviz projeta e desenvolve aplicativos, sites e soluções de IA que tiram sua ideia do papel — com clareza do primeiro traço ao lançamento.</p>
         <div class="hero-ctas">
           <div class="cta-dropdown">
-            <button type="button" class="btn btn-primary cta-trigger" aria-haspopup="true" aria-expanded="false">Iniciar projeto</button>
-            <div class="cta-menu" role="menu">
-              <a href="https://wa.me/5562981401343?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20um%20projeto" target="_blank" rel="noopener" role="menuitem">
+            <button type="button" class="btn btn-primary cta-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="heroContactMenu">Iniciar projeto</button>
+            <div class="cta-menu" id="heroContactMenu">
+              <a href="https://wa.me/5562981401343?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20um%20projeto" target="_blank" rel="noopener">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.1 1.5-.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
                 WhatsApp
-              </a>
-              <a href="mailto:suportesolviz@gmail.com" role="menuitem">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg>
-                E-mail
               </a>
             </div>
           </div>
@@ -982,9 +1073,7 @@
             </clipPath>
           </defs>
 
-          <!-- grid dots (code motif) -->
           <g fill="#f5f2ea" opacity="0.2">
-            <!-- generate grid via manual rows -->
             <g>
               <circle class="grid-dot" cx="30" cy="270" r="2.4" style="animation-delay:.1s"/>
               <circle class="grid-dot" cx="70" cy="270" r="2.4" style="animation-delay:.3s"/>
@@ -1018,10 +1107,8 @@
             </g>
           </g>
 
-          <!-- horizon line -->
           <line x1="10" y1="230" x2="390" y2="230" stroke="#f5f2ea" stroke-opacity="0.14" stroke-width="1"/>
 
-          <!-- sun -->
           <g clip-path="url(#horizonClip)">
             <circle class="sun-core" cx="200" cy="230" r="92" fill="url(#sunGrad)"/>
           </g>
@@ -1030,7 +1117,6 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section id="servicos">
     <div class="wrap">
       <div class="section-head reveal">
@@ -1065,11 +1151,10 @@
     </div>
   </section>
 
-  <!-- AI & OPTIMIZATION -->
-  <section id="ia-otimizacao" style="background: var(--bg-alt);">
+  <section id="ia-otimizacao" class="section-alt">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Inteligência Artificial & Otimização</div>
+        <div class="eyebrow">Inteligência Artificial &amp; Otimização</div>
         <h2>Transforme dados em decisões inteligentes.</h2>
         <p>Implementamos modelos de IA customizados e soluções de otimização que resolvem problemas complexos do seu negócio.</p>
       </div>
@@ -1077,7 +1162,7 @@
       <div class="ai-grid">
         <div class="ai-card reveal">
           <span class="ai-badge">Machine Learning</span>
-          <h3>Modelos Preditivos & Classificação</h3>
+          <h3>Modelos Preditivos &amp; Classificação</h3>
           <p>Desenvolvemos modelos de machine learning que aprendem com seus dados para prever comportamentos, classificar informações e automatizar decisões.</p>
           <ul class="ai-features">
             <li>Previsão de demanda e vendas</li>
@@ -1112,7 +1197,7 @@
         </div>
 
         <div class="ai-card reveal">
-          <span class="ai-badge">NLP & Vision</span>
+          <span class="ai-badge">NLP &amp; Vision</span>
           <h3>Processamento de Linguagem e Imagem</h3>
           <p>Extraímos informações valiosas de textos e imagens usando técnicas avançadas de processamento de linguagem natural e visão computacional.</p>
           <ul class="ai-features">
@@ -1131,7 +1216,7 @@
 
         <div class="ai-card reveal">
           <span class="ai-badge">Data Science</span>
-          <h3>Análise de Dados & Business Intelligence</h3>
+          <h3>Análise de Dados &amp; Business Intelligence</h3>
           <p>Transformamos dados brutos em insights acionáveis através de análises estatísticas, dashboards interativos e relatórios automatizados.</p>
           <ul class="ai-features">
             <li>Dashboards interativos em tempo real</li>
@@ -1151,14 +1236,13 @@
       <div class="ai-highlight reveal">
         <h3>💡 Casos de Uso Reais</h3>
         <p><strong>Logística:</strong> Redução de 30% nos custos de transporte através de otimização de rotas com restrições de tempo, capacidade e múltiplos depósitos.</p>
-        <p style="margin-top:12px;"><strong>E-commerce:</strong> Aumento de 45% nas conversões com sistema de recomendação personalizado baseado em histórico de navegação e compras.</p>
-        <p style="margin-top:12px;"><strong>Manufatura:</strong> Economia de 20% em estoque através de previsão de demanda com machine learning considerando sazonalidade e tendências de mercado.</p>
-        <p style="margin-top:12px;"><strong>Atendimento:</strong> Redução de 60% no tempo de resposta com chatbot inteligente que resolve 80% das dúvidas automaticamente.</p>
+        <p><strong>E-commerce:</strong> Aumento de 45% nas conversões com sistema de recomendação personalizado baseado em histórico de navegação e compras.</p>
+        <p><strong>Manufatura:</strong> Economia de 20% em estoque através de previsão de demanda com machine learning considerando sazonalidade e tendências de mercado.</p>
+        <p><strong>Atendimento:</strong> Redução de 60% no tempo de resposta com chatbot inteligente que resolve 80% das dúvidas automaticamente.</p>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
   <section id="processo">
     <div class="wrap">
       <div class="section-head reveal">
@@ -1200,7 +1284,6 @@
     </div>
   </section>
 
-  <!-- WORK -->
   <section id="projetos">
     <div class="wrap">
       <div class="section-head reveal">
@@ -1238,8 +1321,7 @@
     </div>
   </section>
 
-  <!-- WHY -->
-  <section id="porque" style="background: var(--bg-alt);">
+  <section id="porque" class="section-alt">
     <div class="wrap">
       <div class="section-head reveal">
         <div class="eyebrow">Por que a Solviz</div>
@@ -1267,102 +1349,87 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section id="contato">
     <div class="wrap">
       <div class="cta-banner reveal">
         <h2>Vamos tirar sua ideia do papel?</h2>
         <p class="lead">Preencha o formulário abaixo e entraremos em contato em até um dia útil.</p>
-        
-        <form id="contactForm" class="contact-form">
+
+        <form id="contactForm" class="contact-form" action="https://wa.me/5562981401343" method="get">
           <div class="form-row">
             <div class="form-group">
               <label for="nome">Nome completo *</label>
-              <input type="text" id="nome" name="nome" required>
+              <input type="text" id="nome" name="nome" autocomplete="name" minlength="2" maxlength="120" required>
             </div>
-            <div class="form-group">
-              <label for="email">E-mail *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-          </div>
-          
-          <div class="form-row">
             <div class="form-group">
               <label for="telefone">Telefone / WhatsApp *</label>
-              <input type="tel" id="telefone" name="telefone" required>
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="tel" minlength="10" maxlength="30" required>
             </div>
+          </div>
+
+          <div class="form-row">
             <div class="form-group">
               <label for="empresa">Empresa</label>
-              <input type="text" id="empresa" name="empresa">
+              <input type="text" id="empresa" name="empresa" autocomplete="organization" maxlength="120">
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo de projeto *</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Selecione...</option>
+                <option value="app-mobile">App Mobile</option>
+                <option value="site">Site / Plataforma Web</option>
+                <option value="sistema">Sistema sob Medida</option>
+                <option value="outro">Outro</option>
+              </select>
             </div>
           </div>
-          
-          <div class="form-group">
-            <label for="tipo">Tipo de projeto *</label>
-            <select id="tipo" name="tipo" required>
-              <option value="">Selecione...</option>
-              <option value="app-mobile">App Mobile</option>
-              <option value="site">Site / Plataforma Web</option>
-              <option value="sistema">Sistema sob Medida</option>
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-          
+
           <div class="form-group">
             <label for="mensagem">Conte sobre seu projeto *</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva sua ideia, objetivos e o que você precisa..."></textarea>
+            <textarea id="mensagem" name="mensagem" rows="5" minlength="10" maxlength="4000" required placeholder="Descreva sua ideia, objetivos e o que você precisa..."></textarea>
           </div>
-          
+
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="website">Não preencha este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <p class="form-privacy" id="formPrivacy">As informações preenchidas serão usadas somente para montar sua mensagem no WhatsApp.</p>
+
           <div class="form-actions">
-            <button type="submit" class="btn btn-primary">
-              <span class="btn-text">Enviar proposta</span>
-              <span class="btn-loading" style="display:none;">Enviando...</span>
-            </button>
+            <button type="submit" class="btn btn-primary" aria-describedby="formPrivacy">Continuar no WhatsApp</button>
           </div>
-          
-          <div id="formMessage" class="form-message"></div>
+
+          <div id="formMessage" class="form-message" role="status" aria-live="polite" hidden></div>
         </form>
-        
-        <div class="cta-divider">
-          <span>ou</span>
-        </div>
-        
-        <div class="cta-actions">
-          <a href="https://wa.me/5562981401343?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20um%20projeto" target="_blank" rel="noopener" class="btn btn-ghost">Chamar no WhatsApp</a>
-          <a href="mailto:suportesolviz@gmail.com" class="btn btn-ghost">Enviar e-mail direto</a>
-        </div>
-        
-        <div class="cta-note">suportesolviz@gmail.com · (62) 98140-1343 · resposta em até 1 dia útil</div>
+
+
+        <div class="cta-note">(62) 98140-1343 · atendimento pelo WhatsApp · resposta em até 1 dia útil</div>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
+<footer aria-labelledby="footerTitle">
   <div class="wrap">
+    <h2 class="sr-only" id="footerTitle">Rodapé</h2>
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo"><span class="logo-dot"></span>solviz</div>
+        <a class="logo" href="#top" aria-label="Solviz — início"><span class="logo-dot"></span><span translate="no">solviz</span></a>
         <p>Estúdio de desenvolvimento de apps, sites e soluções de IA. Do design ao código, com clareza em cada etapa.</p>
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <h4>Navegação</h4>
+          <h3>Navegação</h3>
           <a href="#servicos">Serviços</a>
-          <a href="#ia-otimizacao">IA & Otimização</a>
+          <a href="#ia-otimizacao">IA &amp; Otimização</a>
           <a href="#processo">Processo</a>
           <a href="#projetos">Projetos</a>
         </div>
         <div class="footer-col">
-          <h4>Contato</h4>
-          <a href="mailto:suportesolviz@gmail.com">suportesolviz@gmail.com</a>
+          <h3>Contato</h3>
           <a href="https://wa.me/5562981401343?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20um%20projeto" target="_blank" rel="noopener">(62) 98140-1343 · WhatsApp</a>
           <a href="#contato">Iniciar projeto</a>
-        </div>
-        <div class="footer-col">
-          <h4>Redes</h4>
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -1374,254 +1441,476 @@
 </footer>
 
 <script>
-  // ========== MULTI-LANGUAGE SYSTEM ==========
-  const languages = [
-    { code: 'pt', name: 'Português', flag: '🇧🇷', dir: 'ltr' },
-    { code: 'es', name: 'Español', flag: '🇪🇸', dir: 'ltr' },
-    { code: 'en', name: 'English', flag: '🇺🇸', dir: 'ltr' },
-    { code: 'fr', name: 'Français', flag: '🇫🇷', dir: 'ltr' },
-    { code: 'de', name: 'Deutsch', flag: '🇩🇪', dir: 'ltr' },
-    { code: 'it', name: 'Italiano', flag: '🇮🇹', dir: 'ltr' },
-    { code: 'nl', name: 'Nederlands', flag: '🇳🇱', dir: 'ltr' },
-    { code: 'pl', name: 'Polski', flag: '🇵🇱', dir: 'ltr' },
-    { code: 'cs', name: 'Čeština', flag: '🇨🇿', dir: 'ltr' },
-    { code: 'ro', name: 'Română', flag: '🇷🇴', dir: 'ltr' },
-    { code: 'hu', name: 'Magyar', flag: '🇭🇺', dir: 'ltr' },
-    { code: 'sv', name: 'Svenska', flag: '🇸🇪', dir: 'ltr' },
-    { code: 'da', name: 'Dansk', flag: '🇩🇰', dir: 'ltr' },
-    { code: 'fi', name: 'Suomi', flag: '🇫🇮', dir: 'ltr' },
-    { code: 'no', name: 'Norsk', flag: '🇳🇴', dir: 'ltr' },
-    { code: 'tr', name: 'Türkçe', flag: '🇹🇷', dir: 'ltr' },
-    { code: 'el', name: 'Ελληνικά', flag: '🇬🇷', dir: 'ltr' },
-    { code: 'ru', name: 'Русский', flag: '🇷🇺', dir: 'ltr' },
-    { code: 'uk', name: 'Українська', flag: '🇺🇦', dir: 'ltr' },
-    { code: 'ar', name: 'العربية', flag: '🇸🇦', dir: 'rtl' },
-    { code: 'he', name: 'עברית', flag: '🇮🇱', dir: 'rtl' },
-    { code: 'hi', name: 'हिन्दी', flag: '🇮🇳', dir: 'ltr' },
-    { code: 'bn', name: 'বাংলা', flag: '🇧🇩', dir: 'ltr' },
-    { code: 'ta', name: 'தமிழ்', flag: '🇮🇳', dir: 'ltr' },
-    { code: 'te', name: 'తెలుగు', flag: '🇮🇳', dir: 'ltr' },
-    { code: 'gu', name: 'ગુજરાતી', flag: '🇮🇳', dir: 'ltr' },
-    { code: 'ur', name: 'اردو', flag: '🇵🇰', dir: 'rtl' },
-    { code: 'th', name: 'ไทย', flag: '🇹🇭', dir: 'ltr' },
-    { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳', dir: 'ltr' },
-    { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩', dir: 'ltr' },
-    { code: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾', dir: 'ltr' },
-    { code: 'fil', name: 'Filipino', flag: '🇵🇭', dir: 'ltr' },
-    { code: 'ko', name: '한국어', flag: '🇰🇷', dir: 'ltr' },
-    { code: 'ja', name: '日本語', flag: '🇯🇵', dir: 'ltr' },
-    { code: 'zh-CN', name: '简体中文', flag: '🇨🇳', dir: 'ltr' },
-    { code: 'zh-TW', name: '繁體中文', flag: '🇹🇼', dir: 'ltr' }
-  ];
+  (() => {
+    'use strict';
 
-  let currentLang = localStorage.getItem('solviz-lang') || 'pt';
-  
-  // Populate language menu
-  const langMenu = document.getElementById('langMenu');
-  languages.forEach(lang => {
-    const btn = document.createElement('button');
-    btn.className = lang.code === currentLang ? 'active' : '';
-    btn.innerHTML = `<span class="lang-flag">${lang.flag}</span><span>${lang.name}</span>`;
-    btn.onclick = () => changeLang(lang.code);
-    langMenu.appendChild(btn);
-  });
-
-  // Language selector toggle
-  const langSelector = document.querySelector('.lang-selector');
-  const langBtn = document.getElementById('langBtn');
-  langBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    langSelector.classList.toggle('open');
-  });
-  document.addEventListener('click', () => {
-    langSelector.classList.remove('open');
-  });
-
-  function changeLang(code) {
-    const lang = languages.find(l => l.code === code);
-    if (!lang) return;
-    
-    currentLang = code;
-    localStorage.setItem('solviz-lang', code);
-    
-    // Update UI
-    document.getElementById('currentFlag').textContent = lang.flag;
-    document.getElementById('currentLang').textContent = code.toUpperCase().slice(0, 2);
-    document.documentElement.lang = code;
-    document.documentElement.dir = lang.dir;
-    
-    // Update active state
-    langMenu.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
-    event.target.closest('button').classList.add('active');
-    
-    // Close menu
-    langSelector.classList.remove('open');
-    
-    // Trigger Google Translate
-    translatePage(code);
-  }
-
-  function translatePage(targetLang) {
-    // Remove existing Google Translate
-    const existingScript = document.getElementById('google-translate-script');
-    const existingElement = document.getElementById('google_translate_element');
-    if (existingScript) existingScript.remove();
-    if (existingElement) existingElement.remove();
-    
-    if (targetLang === 'pt') {
-      // Reload page to original Portuguese
-      location.reload();
-      return;
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('reveal-ready');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      revealEls.forEach((element) => revealObserver.observe(element));
     }
-    
-    // Add Google Translate
-    window.googleTranslateElementInit = function() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'pt',
-        includedLanguages: languages.map(l => l.code).join(','),
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false
-      }, 'google_translate_element');
-      
-      // Auto-select language
-      setTimeout(() => {
-        const select = document.querySelector('.goog-te-combo');
-        if (select) {
-          select.value = targetLang;
-          select.dispatchEvent(new Event('change'));
+
+    const header = document.getElementById('siteHeader');
+    const syncHeader = () => header.classList.toggle('scrolled', window.scrollY > 20);
+    syncHeader();
+    window.addEventListener('scroll', syncHeader, { passive: true });
+
+    const mainNav = document.getElementById('mainNav');
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    function setMobileMenu(open, returnFocus) {
+      mainNav.classList.toggle('menu-open', open);
+      header.classList.toggle('menu-open', open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      if (open) {
+        const firstLink = navLinks.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else if (returnFocus) {
+        menuBtn.focus();
+      }
+    }
+
+    menuBtn.addEventListener('click', () => {
+      const willOpen = !mainNav.classList.contains('menu-open');
+      closeLanguageMenu(false);
+      closeAllDropdowns();
+      setMobileMenu(willOpen, false);
+    });
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setMobileMenu(false, false));
+    });
+
+    const dropdowns = document.querySelectorAll('.cta-dropdown');
+    let activeDropdownTrigger = null;
+
+    function closeAllDropdowns(except, returnFocus) {
+      dropdowns.forEach((dropdown) => {
+        if (dropdown !== except) {
+          const trigger = dropdown.querySelector('.cta-trigger');
+          const wasOpen = dropdown.classList.contains('open');
+          dropdown.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+          if (returnFocus && wasOpen) trigger.focus();
         }
-      }, 1000);
-    };
-    
-    const script = document.createElement('script');
-    script.id = 'google-translate-script';
-    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    document.body.appendChild(script);
-    
-    // Hide Google Translate widget
-    const style = document.createElement('style');
-    style.textContent = `
-      #google_translate_element { display: none !important; }
-      .goog-te-banner-frame { display: none !important; }
-      .goog-te-balloon-frame { display: none !important; }
-      body { top: 0 !important; }
-      .skiptranslate { display: none !important; }
-    `;
-    document.head.appendChild(style);
-  }
-
-  // Initialize with saved language
-  if (currentLang !== 'pt') {
-    const lang = languages.find(l => l.code === currentLang);
-    if (lang) {
-      document.getElementById('currentFlag').textContent = lang.flag;
-      document.getElementById('currentLang').textContent = currentLang.toUpperCase().slice(0, 2);
-      document.documentElement.lang = currentLang;
-      document.documentElement.dir = lang.dir;
-      translatePage(currentLang);
-    }
-  }
-
-  // header scroll state
-  const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 20);
-  });
-
-  // scroll reveal
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting){
-        entry.target.classList.add('in');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => io.observe(el));
-
-  // "Iniciar projeto" dropdown (WhatsApp / E-mail)
-  const dropdowns = document.querySelectorAll('.cta-dropdown');
-  function closeAllDropdowns(except){
-    dropdowns.forEach(dd => {
-      if (dd !== except){
-        dd.classList.remove('open');
-        dd.querySelector('.cta-trigger').setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-  dropdowns.forEach(dd => {
-    const trigger = dd.querySelector('.cta-trigger');
-    trigger.addEventListener('click', (e) => {
-      e.preventDefault();
-      const willOpen = !dd.classList.contains('open');
-      closeAllDropdowns(dd);
-      dd.classList.toggle('open', willOpen);
-      trigger.setAttribute('aria-expanded', String(willOpen));
-    });
-  });
-  document.addEventListener('click', (e) => {
-    dropdowns.forEach(dd => {
-      if (!dd.contains(e.target)){
-        dd.classList.remove('open');
-        dd.querySelector('.cta-trigger').setAttribute('aria-expanded', 'false');
-      }
-    });
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeAllDropdowns();
-  });
-
-  // Contact form submission
-  const contactForm = document.getElementById('contactForm');
-  const formMessage = document.getElementById('formMessage');
-  
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const btnText = btn.querySelector('.btn-text');
-    const btnLoading = btn.querySelector('.btn-loading');
-    
-    // Desabilitar botão e mostrar loading
-    btn.disabled = true;
-    btnText.style.display = 'none';
-    btnLoading.style.display = 'inline';
-    formMessage.style.display = 'none';
-    
-    // Coletar dados do formulário
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    try {
-      // SUBSTITUA A URL ABAIXO PELA URL DO SEU GOOGLE APPS SCRIPT
-      const scriptURL = 'COLE_AQUI_A_URL_DO_SEU_GOOGLE_SCRIPT';
-      
-      const response = await fetch(scriptURL, {
-        method: 'POST',
-        body: formData
       });
-      
-      const result = await response.json();
-      
-      if (result.status === 'success') {
-        formMessage.className = 'form-message success';
-        formMessage.textContent = '✓ Mensagem enviada com sucesso! Retornaremos em breve.';
-        contactForm.reset();
-      } else {
-        throw new Error(result.message || 'Erro ao enviar');
-      }
-    } catch (error) {
-      formMessage.className = 'form-message error';
-      formMessage.textContent = '✗ Erro ao enviar. Por favor, tente via WhatsApp ou e-mail direto.';
-      console.error('Erro:', error);
-    } finally {
-      // Reabilitar botão
-      btn.disabled = false;
-      btnText.style.display = 'inline';
-      btnLoading.style.display = 'none';
+      if (!except) activeDropdownTrigger = null;
     }
-  });
+
+    dropdowns.forEach((dropdown) => {
+      const trigger = dropdown.querySelector('.cta-trigger');
+      trigger.addEventListener('click', () => {
+        const willOpen = !dropdown.classList.contains('open');
+        closeLanguageMenu(false);
+        setMobileMenu(false, false);
+        closeAllDropdowns(dropdown, false);
+        dropdown.classList.toggle('open', willOpen);
+        trigger.setAttribute('aria-expanded', String(willOpen));
+        activeDropdownTrigger = willOpen ? trigger : null;
+      });
+      dropdown.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => closeAllDropdowns());
+      });
+    });
+
+    const languages = [
+      { code: 'pt', translateCode: 'pt', name: 'Português', flag: '🇧🇷', dir: 'ltr' },
+      { code: 'es', translateCode: 'es', name: 'Español', flag: '🇪🇸', dir: 'ltr' },
+      { code: 'en', translateCode: 'en', name: 'English', flag: '🇺🇸', dir: 'ltr' },
+      { code: 'fr', translateCode: 'fr', name: 'Français', flag: '🇫🇷', dir: 'ltr' },
+      { code: 'de', translateCode: 'de', name: 'Deutsch', flag: '🇩🇪', dir: 'ltr' },
+      { code: 'it', translateCode: 'it', name: 'Italiano', flag: '🇮🇹', dir: 'ltr' },
+      { code: 'nl', translateCode: 'nl', name: 'Nederlands', flag: '🇳🇱', dir: 'ltr' },
+      { code: 'pl', translateCode: 'pl', name: 'Polski', flag: '🇵🇱', dir: 'ltr' },
+      { code: 'cs', translateCode: 'cs', name: 'Čeština', flag: '🇨🇿', dir: 'ltr' },
+      { code: 'ro', translateCode: 'ro', name: 'Română', flag: '🇷🇴', dir: 'ltr' },
+      { code: 'hu', translateCode: 'hu', name: 'Magyar', flag: '🇭🇺', dir: 'ltr' },
+      { code: 'sv', translateCode: 'sv', name: 'Svenska', flag: '🇸🇪', dir: 'ltr' },
+      { code: 'da', translateCode: 'da', name: 'Dansk', flag: '🇩🇰', dir: 'ltr' },
+      { code: 'fi', translateCode: 'fi', name: 'Suomi', flag: '🇫🇮', dir: 'ltr' },
+      { code: 'no', translateCode: 'no', name: 'Norsk', flag: '🇳🇴', dir: 'ltr' },
+      { code: 'tr', translateCode: 'tr', name: 'Türkçe', flag: '🇹🇷', dir: 'ltr' },
+      { code: 'el', translateCode: 'el', name: 'Ελληνικά', flag: '🇬🇷', dir: 'ltr' },
+      { code: 'ru', translateCode: 'ru', name: 'Русский', flag: '🇷🇺', dir: 'ltr' },
+      { code: 'uk', translateCode: 'uk', name: 'Українська', flag: '🇺🇦', dir: 'ltr' },
+      { code: 'ar', translateCode: 'ar', name: 'العربية', flag: '🇸🇦', dir: 'rtl' },
+      { code: 'he', translateCode: 'iw', name: 'עברית', flag: '🇮🇱', dir: 'rtl' },
+      { code: 'hi', translateCode: 'hi', name: 'हिन्दी', flag: '🇮🇳', dir: 'ltr' },
+      { code: 'bn', translateCode: 'bn', name: 'বাংলা', flag: '🇧🇩', dir: 'ltr' },
+      { code: 'ta', translateCode: 'ta', name: 'தமிழ்', flag: '🇮🇳', dir: 'ltr' },
+      { code: 'te', translateCode: 'te', name: 'తెలుగు', flag: '🇮🇳', dir: 'ltr' },
+      { code: 'gu', translateCode: 'gu', name: 'ગુજરાતી', flag: '🇮🇳', dir: 'ltr' },
+      { code: 'ur', translateCode: 'ur', name: 'اردو', flag: '🇵🇰', dir: 'rtl' },
+      { code: 'th', translateCode: 'th', name: 'ไทย', flag: '🇹🇭', dir: 'ltr' },
+      { code: 'vi', translateCode: 'vi', name: 'Tiếng Việt', flag: '🇻🇳', dir: 'ltr' },
+      { code: 'id', translateCode: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩', dir: 'ltr' },
+      { code: 'ms', translateCode: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾', dir: 'ltr' },
+      { code: 'fil', translateCode: 'tl', name: 'Filipino', flag: '🇵🇭', dir: 'ltr' },
+      { code: 'ko', translateCode: 'ko', name: '한국어', flag: '🇰🇷', dir: 'ltr' },
+      { code: 'ja', translateCode: 'ja', name: '日本語', flag: '🇯🇵', dir: 'ltr' },
+      { code: 'zh-CN', translateCode: 'zh-CN', name: '简体中文', flag: '🇨🇳', dir: 'ltr' },
+      { code: 'zh-TW', translateCode: 'zh-TW', name: '繁體中文', flag: '🇹🇼', dir: 'ltr' }
+    ];
+
+    const langSelector = document.querySelector('.lang-selector');
+    const langBtn = document.getElementById('langBtn');
+    const langMenu = document.getElementById('langMenu');
+    const currentFlag = document.getElementById('currentFlag');
+    const currentLangLabel = document.getElementById('currentLang');
+    const languageStatus = document.getElementById('languageStatus');
+    let currentLanguage = languages[0];
+    let languageLoading = false;
+    let translateLoader;
+
+    function readStoredLanguage() {
+      try {
+        return localStorage.getItem('solviz-lang');
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function storeLanguage(code) {
+      try {
+        localStorage.setItem('solviz-lang', code);
+      } catch (error) {
+        return;
+      }
+    }
+
+    function syncLanguageUi(language) {
+      currentFlag.textContent = language.flag;
+      currentLangLabel.textContent = language.code.toUpperCase().slice(0, 2);
+      langBtn.setAttribute('aria-label', 'Idioma atual: ' + language.name + '. Selecionar idioma');
+      langMenu.querySelectorAll('button').forEach((button) => {
+        const active = button.dataset.language === language.code;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+    }
+
+    function closeLanguageMenu(returnFocus) {
+      const wasOpen = langSelector.classList.contains('open');
+      langSelector.classList.remove('open');
+      langBtn.setAttribute('aria-expanded', 'false');
+      if (returnFocus && wasOpen) langBtn.focus();
+    }
+
+    languages.forEach((language) => {
+      const button = document.createElement('button');
+      const flag = document.createElement('span');
+      const label = document.createElement('span');
+      button.type = 'button';
+      button.dataset.language = language.code;
+      button.setAttribute('aria-pressed', 'false');
+      flag.className = 'lang-flag';
+      flag.textContent = language.flag;
+      label.textContent = language.name;
+      button.append(flag, label);
+      button.addEventListener('click', () => changeLanguage(language.code));
+      langMenu.appendChild(button);
+    });
+
+    langBtn.addEventListener('click', () => {
+      if (languageLoading) return;
+      languageStatus.textContent = '';
+      const open = !langSelector.classList.contains('open');
+      closeAllDropdowns();
+      setMobileMenu(false, false);
+      langSelector.classList.toggle('open', open);
+      langBtn.setAttribute('aria-expanded', String(open));
+    });
+
+    function waitForTranslateCombo(timeoutMs) {
+      return new Promise((resolve, reject) => {
+        const startedAt = Date.now();
+        const timer = window.setInterval(() => {
+          const combo = document.querySelector('.goog-te-combo');
+          if (combo) {
+            window.clearInterval(timer);
+            resolve(combo);
+          } else if (Date.now() - startedAt >= timeoutMs) {
+            window.clearInterval(timer);
+            reject(new Error('O seletor do tradutor não foi carregado.'));
+          }
+        }, 100);
+      });
+    }
+
+    function initializeTranslateElement() {
+      const container = document.getElementById('google_translate_element');
+      if (!container.dataset.initialized) {
+        new window.google.translate.TranslateElement({
+          pageLanguage: 'pt',
+          includedLanguages: languages.map((language) => language.translateCode).join(','),
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        }, 'google_translate_element');
+        container.dataset.initialized = 'true';
+      }
+      return waitForTranslateCombo(8000).catch((error) => {
+        delete container.dataset.initialized;
+        container.replaceChildren();
+        throw error;
+      });
+    }
+
+    function loadGoogleTranslate() {
+      if (window.google && window.google.translate && window.google.translate.TranslateElement) {
+        return initializeTranslateElement();
+      }
+      if (translateLoader) return translateLoader;
+
+      translateLoader = new Promise((resolve, reject) => {
+        let settled = false;
+        let script;
+
+        const failLoading = (error) => {
+          if (settled) return;
+          settled = true;
+          window.clearTimeout(timeout);
+          if (script && !(window.google && window.google.translate)) script.remove();
+          translateLoader = null;
+          reject(error);
+        };
+
+        const timeout = window.setTimeout(() => {
+          failLoading(new Error('O serviço de tradução demorou para responder.'));
+        }, 12000);
+
+        window.googleTranslateElementInit = () => {
+          initializeTranslateElement().then((combo) => {
+            if (settled) return;
+            settled = true;
+            window.clearTimeout(timeout);
+            resolve(combo);
+          }).catch(failLoading);
+        };
+
+        script = document.getElementById('google-translate-script');
+        if (!script) {
+          script = document.createElement('script');
+          script.id = 'google-translate-script';
+          script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+          script.async = true;
+          document.body.appendChild(script);
+        }
+        script.addEventListener('error', () => {
+          failLoading(new Error('Não foi possível carregar o serviço de tradução.'));
+        }, { once: true });
+      });
+
+      return translateLoader;
+    }
+
+    function clearTranslationCookie() {
+      const expires = 'Thu, 01 Jan 1970 00:00:00 GMT';
+      document.cookie = 'googtrans=; expires=' + expires + '; path=/';
+      if (location.hostname) {
+        document.cookie = 'googtrans=; expires=' + expires + '; path=/; domain=' + location.hostname;
+        document.cookie = 'googtrans=; expires=' + expires + '; path=/; domain=.' + location.hostname;
+      }
+    }
+
+    async function changeLanguage(code) {
+      const language = languages.find((item) => item.code === code);
+      if (!language || languageLoading) return;
+      closeLanguageMenu(true);
+      if (language.code === currentLanguage.code) return;
+
+      languageLoading = true;
+      langBtn.setAttribute('aria-disabled', 'true');
+      langBtn.setAttribute('aria-busy', 'true');
+      languageStatus.textContent = 'Carregando tradução para ' + language.name + '.';
+
+      try {
+        if (language.code === 'pt') {
+          currentLanguage = language;
+          storeLanguage(language.code);
+          syncLanguageUi(language);
+          document.documentElement.lang = 'pt-BR';
+          document.documentElement.dir = 'ltr';
+          clearTranslationCookie();
+          location.reload();
+          return;
+        }
+
+        const combo = await loadGoogleTranslate();
+        combo.value = language.translateCode;
+        if (combo.value !== language.translateCode) {
+          throw new Error('O idioma selecionado não está disponível.');
+        }
+        combo.dispatchEvent(new Event('change'));
+        currentLanguage = language;
+        storeLanguage(language.code);
+        syncLanguageUi(language);
+        document.documentElement.lang = language.code;
+        document.documentElement.dir = language.dir;
+        languageStatus.textContent = 'Idioma alterado para ' + language.name + '.';
+      } catch (error) {
+        languageStatus.textContent = 'Não foi possível traduzir a página agora. Tente novamente.';
+        console.error('Falha ao traduzir a página:', error);
+      } finally {
+        languageLoading = false;
+        langBtn.removeAttribute('aria-disabled');
+        langBtn.removeAttribute('aria-busy');
+      }
+    }
+
+    syncLanguageUi(currentLanguage);
+    const savedLanguageCode = readStoredLanguage();
+    if (savedLanguageCode && savedLanguageCode !== 'pt' && languages.some((item) => item.code === savedLanguageCode)) {
+      changeLanguage(savedLanguageCode);
+    }
+
+    document.addEventListener('click', (event) => {
+      if (!langSelector.contains(event.target)) closeLanguageMenu(false);
+      dropdowns.forEach((dropdown) => {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove('open');
+          dropdown.querySelector('.cta-trigger').setAttribute('aria-expanded', 'false');
+        }
+      });
+      if (!header.contains(event.target)) setMobileMenu(false, false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeLanguageMenu(true);
+      if (activeDropdownTrigger) {
+        closeAllDropdowns(null, true);
+      } else {
+        closeAllDropdowns();
+      }
+      if (mainNav.classList.contains('menu-open')) setMobileMenu(false, true);
+    });
+
+    const desktopMedia = window.matchMedia('(min-width: 901px)');
+    const closeDesktopMenu = (event) => {
+      if (event.matches) setMobileMenu(false, false);
+    };
+    if (desktopMedia.addEventListener) {
+      desktopMedia.addEventListener('change', closeDesktopMenu);
+    } else {
+      desktopMedia.addListener(closeDesktopMenu);
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    const projectTypes = {
+      'app-mobile': 'App Mobile',
+      'site': 'Site / Plataforma Web',
+      'sistema': 'Sistema sob Medida',
+      'outro': 'Outro'
+    };
+
+    function showFormMessage(kind, message) {
+      formMessage.className = 'form-message ' + kind;
+      formMessage.setAttribute('role', kind === 'error' ? 'alert' : 'status');
+      formMessage.textContent = message;
+      formMessage.hidden = false;
+    }
+
+    function normalizeForm() {
+      const fields = {
+        nome: contactForm.elements.nome,
+        telefone: contactForm.elements.telefone,
+        empresa: contactForm.elements.empresa,
+        tipo: contactForm.elements.tipo,
+        mensagem: contactForm.elements.mensagem
+      };
+
+      fields.nome.value = fields.nome.value.trim();
+      fields.telefone.value = fields.telefone.value.trim();
+      fields.empresa.value = fields.empresa.value.trim();
+      fields.mensagem.value = fields.mensagem.value.trim();
+
+      if (fields.nome.value.length < 2) {
+        showFormMessage('error', 'Informe seu nome completo.');
+        fields.nome.focus();
+        return null;
+      }
+
+      const phoneDigits = fields.telefone.value.replace(/\D/g, '');
+      if (phoneDigits.length < 10 || phoneDigits.length > 15) {
+        showFormMessage('error', 'Informe um telefone válido, com DDD.');
+        fields.telefone.focus();
+        return null;
+      }
+
+      if (!projectTypes[fields.tipo.value]) {
+        showFormMessage('error', 'Selecione o tipo de projeto.');
+        fields.tipo.focus();
+        return null;
+      }
+
+      if (fields.mensagem.value.length < 10) {
+        showFormMessage('error', 'Conte um pouco mais sobre o seu projeto.');
+        fields.mensagem.focus();
+        return null;
+      }
+
+      return fields;
+    }
+
+    function buildWhatsAppUrl(fields) {
+      const maxMessageLength = 1800;
+      const originalMessage = fields.mensagem.value;
+      const summarized = originalMessage.length > maxMessageLength;
+      const message = summarized
+        ? originalMessage.slice(0, maxMessageLength) + '\n[Continue a mensagem no WhatsApp]'
+        : originalMessage;
+      const lines = [
+        'Olá, quero falar sobre um projeto.',
+        '',
+        'Nome: ' + fields.nome.value,
+        'Telefone: ' + fields.telefone.value,
+        'Empresa: ' + (fields.empresa.value || 'Não informada'),
+        'Tipo: ' + projectTypes[fields.tipo.value],
+        '',
+        'Mensagem:',
+        message
+      ];
+
+      return 'https://wa.me/5562981401343?text=' + encodeURIComponent(lines.join('\n'));
+    }
+
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      formMessage.hidden = true;
+      formMessage.className = 'form-message';
+      formMessage.textContent = '';
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      const fields = normalizeForm();
+      if (!fields) return;
+
+      if (contactForm.elements.website.value) {
+        contactForm.reset();
+        return;
+      }
+
+      try {
+        window.location.href = buildWhatsAppUrl(fields);
+      } catch (error) {
+        showFormMessage('error', 'Não foi possível abrir o WhatsApp. Use o número (62) 98140-1343; seus dados foram preservados.');
+        console.error('Falha ao abrir o WhatsApp:', error);
+      }
+    });
+  })();
 </script>
 
 </body>
