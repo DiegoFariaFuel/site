@@ -43,7 +43,7 @@ Português, espanhol, inglês, francês, alemão, italiano, holandês, polonês,
 
 O site está configurado para a Vercel no endereço <https://www.solviz.com.br/>. O domínio raiz <https://solviz.com.br/> deve redirecionar para a versão com **www**.
 
-O arquivo **vercel.json** força a pasta raiz como diretório de saída do site estático, sem etapa de build.
+A publicação usa o modo estático da Vercel, com preset **Other** e sem comando de build. O arquivo **vercel.json** direciona somente a rota inicial para **index.html**.
 
 ## Contato
 
