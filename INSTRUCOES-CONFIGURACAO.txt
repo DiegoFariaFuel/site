@@ -1,0 +1,164 @@
+═══════════════════════════════════════════════════════════════════════════
+  INSTRUÇÕES PARA CONFIGURAR O FORMULÁRIO DE CONTATO - SOLVIZ
+═══════════════════════════════════════════════════════════════════════════
+
+📧 Este formulário envia e-mails GRATUITOS usando o Google Apps Script
+
+
+═══════════════════════════════════════════════════════════════════════════
+PASSO 1 - CRIAR O GOOGLE APPS SCRIPT
+═══════════════════════════════════════════════════════════════════════════
+
+1. Acesse: https://script.google.com
+   (Faça login com a conta do Gmail: suportesolviz@gmail.com)
+
+2. Clique em "+ Novo projeto"
+
+3. Na tela do editor, delete todo o código que aparecer
+
+4. Copie TODO o conteúdo do arquivo "google-script-codigo.js"
+
+5. Cole no editor do Google Apps Script
+
+6. (OPCIONAL) Se quiser receber em outro e-mail, altere a linha:
+   const EMAIL_DESTINO = "suportesolviz@gmail.com";
+
+7. Clique no ícone de "Salvar" (💾) ou Ctrl+S
+
+8. Dê um nome ao projeto: "Formulário Solviz"
+
+
+═══════════════════════════════════════════════════════════════════════════
+PASSO 2 - IMPLANTAR O SCRIPT COMO WEB APP
+═══════════════════════════════════════════════════════════════════════════
+
+1. No topo direito, clique em "Implantar" > "Nova implantação"
+
+2. Clique no ícone de engrenagem ⚙️ ao lado de "Selecione o tipo"
+
+3. Selecione "Aplicativo da Web"
+
+4. Configure:
+   - Descrição: "API de contato Solviz"
+   - Executar como: "Eu (seu e-mail)"
+   - Quem tem acesso: "Qualquer pessoa"
+
+5. Clique em "Implantar"
+
+6. Uma janela pedirá autorização. Clique em "Autorizar acesso"
+
+7. Se aparecer "Google não verificou este app":
+   - Clique em "Avançado"
+   - Clique em "Acessar Formulário Solviz (não seguro)"
+   - Clique em "Permitir"
+
+8. COPIE A URL que aparecer (algo como):
+   https://script.google.com/macros/s/AKfycby.../exec
+
+   ⚠️ IMPORTANTE: Guarde esta URL!
+
+
+═══════════════════════════════════════════════════════════════════════════
+PASSO 3 - CONFIGURAR O SITE HTML
+═══════════════════════════════════════════════════════════════════════════
+
+1. Abra o arquivo: solviz (2).html
+
+2. Procure por esta linha (perto do final do arquivo):
+   const scriptURL = 'COLE_AQUI_A_URL_DO_SEU_GOOGLE_SCRIPT';
+
+3. Substitua 'COLE_AQUI_A_URL_DO_SEU_GOOGLE_SCRIPT' pela URL copiada no Passo 2
+
+   Exemplo de como deve ficar:
+   const scriptURL = 'https://script.google.com/macros/s/AKfycby.../exec';
+
+4. Salve o arquivo HTML
+
+
+═══════════════════════════════════════════════════════════════════════════
+PASSO 4 - TESTAR
+═══════════════════════════════════════════════════════════════════════════
+
+1. Abra o arquivo "solviz (2).html" no navegador
+
+2. Role até a seção "Vamos tirar sua ideia do papel?"
+
+3. Preencha todos os campos do formulário
+
+4. Clique em "Enviar proposta"
+
+5. Aguarde a mensagem de sucesso verde ✓
+
+6. Verifique seu e-mail suportesolviz@gmail.com
+
+7. Você deve receber um e-mail formatado com todos os dados!
+
+
+═══════════════════════════════════════════════════════════════════════════
+SOLUÇÃO DE PROBLEMAS
+═══════════════════════════════════════════════════════════════════════════
+
+❌ "Erro ao enviar"
+   → Verifique se a URL do script está correta no HTML
+   → Certifique-se que implantou como "Qualquer pessoa" tem acesso
+
+❌ Não recebo o e-mail
+   → Verifique a pasta de SPAM
+   → Confirme que o EMAIL_DESTINO está correto no código
+   → Verifique os registros de execução no Apps Script
+
+❌ "Autorização necessária"
+   → Siga os passos 7 do Passo 2 novamente
+   → Clique em "Avançado" e depois "Permitir"
+
+
+═══════════════════════════════════════════════════════════════════════════
+RECURSOS ADICIONAIS
+═══════════════════════════════════════════════════════════════════════════
+
+📊 Ver registros de envios:
+   - Acesse: https://script.google.com
+   - Abra seu projeto "Formulário Solviz"
+   - Clique em "Execuções" no menu lateral
+
+🧪 Testar sem o site:
+   - No Apps Script, selecione a função "testarEnvio" no topo
+   - Clique em "Executar"
+   - Verifique seu e-mail
+
+🔄 Atualizar o script:
+   - Faça alterações no código
+   - Salve
+   - Vá em "Implantar" > "Gerenciar implantações"
+   - Clique no ícone de editar (lápis)
+   - Mude a "Versão" para "Nova versão"
+   - Clique em "Implantar"
+
+
+═══════════════════════════════════════════════════════════════════════════
+PERGUNTAS FREQUENTES
+═══════════════════════════════════════════════════════════════════════════
+
+Q: É realmente gratuito?
+A: Sim! 100% gratuito. Google Apps Script permite até 20.000 execuções/dia.
+
+Q: Preciso pagar por hospedagem?
+A: Não! O Google hospeda o script gratuitamente.
+
+Q: Os e-mails chegam instantaneamente?
+A: Sim, em segundos após o envio do formulário.
+
+Q: Posso personalizar o layout do e-mail?
+A: Sim! Edite o HTML na variável "corpoEmail" no código.
+
+Q: Funciona em qualquer hospedagem?
+A: Sim! Pode usar com qualquer servidor ou GitHub Pages.
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ Pronto! Seu formulário está configurado para enviar e-mails automaticamente!
+
+Precisa de ajuda? Entre em contato através do próprio formulário! 😄
+
+═══════════════════════════════════════════════════════════════════════════
