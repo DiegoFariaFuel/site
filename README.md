@@ -45,8 +45,4 @@ O site está configurado para a Vercel no endereço <https://www.solviz.com.br/>
 
 A publicação usa o modo estático da Vercel, com preset **Other** e sem comando de build. O arquivo **vercel.json** direciona somente a rota inicial para **index.html**.
 
-## Contato
-
-- WhatsApp: (62) 98140-1343
-
 © 2026 Solviz. Todos os direitos reservados.
