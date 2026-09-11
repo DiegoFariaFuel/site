@@ -33,8 +33,6 @@ O visitante preenche nome, e-mail, telefone, empresa, tipo de projeto e mensagem
 
 Número configurado:
 
-    +55 62 98140-1343
-
 ## Idiomas disponíveis
 
 Português, espanhol, inglês, francês, alemão, italiano, holandês, polonês, tcheco, romeno, húngaro, sueco, dinamarquês, finlandês, norueguês, turco, grego, russo, ucraniano, árabe, hebraico, hindi, bengali, tâmil, telugu, guzerate, urdu, tailandês, vietnamita, indonésio, malaio, filipino, coreano, japonês, chinês simplificado e chinês tradicional.
